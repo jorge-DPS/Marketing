@@ -1,0 +1,60 @@
+.eslogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    @include tablet {
+        height: 55rem;
+    }
+
+    h1 {
+        text-align: center;
+        color: $blanco;
+        font-weight: $bold;
+        line-height: 2;
+        margin: 0 0 2rem 0;
+
+        @include tablet {
+            margin: 2.5rem 0;
+            max-width: 50rem;
+            text-align: left;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        color: $blanco;
+        font-weight: $regular;
+        margin: 0 0 2rem 0;
+
+        @include tablet {
+            max-width: 60rem;
+            margin: 2.5rem 0;
+            text-align: left;
+        }
+    }
+
+    p {
+        color: $blanco;
+        font-size: 2.2rem;
+
+        @include tablet {
+            max-width: 60rem;
+            margin: 2.5rem 0;
+            text-align: left;
+        }
+    }
+
+    .btn {
+        margin: 2.5rem 0;
+        @include boton(auto);
+        text-align: center;
+    }
+
+    @include tablet {
+        .btn {
+
+            @include boton(fit-content)
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.clientes {
+
+    text-align: center;
+    // border: 1px solid $gris;
+
+    h3 {
+        font-weight: $bold;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    h4 {
+        font-weight: $regular;
+    }
+
+    a {
+        margin: 4rem 0;
+        display: block;
+    }
+
+    @include tablet {
+        @include grid(3, 0)
+
+    }
+
+    .cliente {
+    // border: 1px solid $gris;
+    padding: 2rem;
+        @include tablet {
+            .cliente-header {
+                height: 26%;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+        &:last-of-type {
+            margin-bottom: 4rem;
+        }
+        &:hover {
+            border-bottom: 1px solid $primario;
+        }
+    }
+}
