@@ -16,6 +16,7 @@
 
         background-position: center center;
         background-size: cover;
+
         @include tablet {
             min-height: 70rem;
         }
@@ -23,7 +24,11 @@
     }
 
 }
+
 .logoptipo {
     width: 20rem;
     height: auto;
+    color: $blanco !important;
+    fill: $blanco;
+
 }
