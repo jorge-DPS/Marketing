@@ -1,24 +1,25 @@
-
-.titulo-seccion{
+.titulo-seccion {
     margin-top: 5rem;
-        font-size: 4rem;
-        font-weight: $bold;
-    
+    font-size: 4rem;
+    font-weight: $bold;
+
 }
 
 .contenedor-servicios {
     padding: 2rem;
+
     @include tablet {
-        
+
         @include grid(2, 2rem)
     }
 
-    
+
 }
 
 
 
 .contenido-servicio {
+
     text-align: center;
     border: 1px solid $gris;
     margin-bottom: 4rem;
@@ -33,19 +34,7 @@
         font-weight: $black;
         margin-bottom: 1rem;
         margin: 0 0 2rem 0;
-        
-    }
 
-    h3 {
-        margin-top: 0;
-            font-weight: $regular;
-            line-height: 1.5;
-    }
-
-    p {
-        margin-top: 0;
-        text-align: center;
-        // line-height: 2;
     }
 
     .icono-caracteristicas {
@@ -64,5 +53,36 @@
             align-items: center;
         }
     }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+        font-weight: $regular;
+        line-height: 1.5;
+        
+        @include tablet {
+            height: 16rem;
+            margin: 0;
+        }
+
+    }
+
+    .texto-truncado {
+        margin-top: 0;
+        text-align: center;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        /* Mostrar solo 3 líneas */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        white-space: normal;
+        /* Para que se muestre con múltiples líneas truncadas */
+
+    }
+
+
+
 
 }
